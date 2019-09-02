@@ -46,3 +46,10 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 androidboot.console=ttyMSM0 androidboot.usbconfigfs=true BOARD_KERNEL_CMDLINE += androidboot.configfs=true androidboot.selinux=permissive vmalloc=256M firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+
+TARGET_PREBUILT_KERNEL := device/Xiaomi/pine/kernel
+TARGET_RECOVERY_FSTAB := device/Xiaomi/pine/recovery.fstab
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
+# Partitions
+
