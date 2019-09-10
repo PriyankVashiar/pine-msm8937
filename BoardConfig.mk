@@ -10,7 +10,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 
 # Architecture
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -31,8 +31,6 @@ BOARD_KERNEL_CMDLINE += buildvariant=user
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := pine_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
 TARGET_PREBUILT_KERNEL := device/Xiaomi/pine/kernel
 
 # Partitions
